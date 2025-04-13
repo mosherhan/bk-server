@@ -1232,7 +1232,7 @@
       <div class="bottom-linewrap">
         <div class="mainline-text">(</div>
         <div class="counter">0<br></div>
-        <div class="mainline-text">/10)<br></div>
+        <div class="mainline-text">/12)<br></div>
       </div>
       <div class="container-large">
         <div class="header6_content">
@@ -1284,7 +1284,7 @@
             let tl = gsap.timeline();
             const isMobile = window.innerWidth < 768;
             const totalImages = images.length;
-            const imageDuration = 0.05;
+            const imageDuration = 0.2;
 
             if (isMobile) {
               body.style.overflow = "hidden";
@@ -1319,12 +1319,12 @@
            tl.fromTo(counter,
               { innerHTML: 0 },
               {
-                innerHTML: 10,
-                duration: 10 * imageDuration,
+                innerHTML: 12,
+                duration: 12 * imageDuration,
                 snap: { innerHTML: 1 },
                 ease: "none"
               },
-              "-=" + ((10 * imageDuration) + 0.6)
+              "-=" + ((12 * imageDuration) + 0.6)
             );
 
             tl.to(loader, {
